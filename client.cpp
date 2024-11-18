@@ -13,6 +13,7 @@ int main()
     sockaddr_in serverAddress;
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_port = htons(8080);
+    const char* serverIP = "ip_server_there";
     inet_pton(AF_INET, serverIP, &serverAddress.sin_addr);
 
     // sending connection request
