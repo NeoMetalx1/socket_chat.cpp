@@ -62,4 +62,5 @@ int main() {
 
     close(serverSocket);
     return 0;
+//отправлять то что приняли (recv() => send())
 }
